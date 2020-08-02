@@ -2,6 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
+##makeCacheMatrix is a function which returns a list containing fuctions:
+##set,get,setInverse,getInverse. 
 
 makeCacheMatrix <- function(x = matrix()) {inv <- NULL
 set <- function(y){
@@ -17,6 +19,8 @@ list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 
 
 ## Write a short comment describing this function
+## cacheSolve returns the inverse of an matrix with the use of previously 
+## created makeCacheMatrix function
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
